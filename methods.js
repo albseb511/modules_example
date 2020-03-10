@@ -1,4 +1,4 @@
-function methodWrapper(){
+(function (){
     function renderDOM(){
         var res = document.getElementById('tasks')
         res.innerHTML = ''
@@ -20,12 +20,10 @@ function methodWrapper(){
             title: title,
             status: false
         }
-        addToTasks(task)
-        renderDOM()
+        MAIN.addToTasks(task)
+        MAIN.renderDOM()
     }
 
     MAIN.renderDOM = renderDOM
     MAIN.addTask = addTask
-}
-
-methodWrapper()
+})();

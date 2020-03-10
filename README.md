@@ -1,13 +1,9 @@
-### STEP 2
+### STEP 3
 
 in this step:
 
-lets start to wrap it in a function
+We can start to use IIFE
 
-We can notice that in the window object only the MAIN and the other wrapper functions are seen
+this essentially means immeadiately invoked function expressions
 
-The wrapper function we made, is only made for executing it the first time. 
-
-It seems like there is no other use of it.
-
-We can now go and try to remove the wrapper functions also from the window object
+After this you should only have MAIN in your window object

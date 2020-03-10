@@ -1,1 +1,1 @@
-renderDOM()
+MAIN.renderDOM()

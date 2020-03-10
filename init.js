@@ -1,22 +1,28 @@
-var tasks = [
-    {
-        title: 'Buy Milk',
-        status: false
-    },
-    {
-        title: 'Buy Batteries',
-        status: false
-    },
-    {
-        title: 'Buy Bread',
-        status: true
-    },
-]
+var MAIN = {}
 
-function getTasks(){
-    return tasks
+function initWrapper(){
+    var tasks = [
+        {
+            title: 'Buy Milk',
+            status: false
+        },
+        {
+            title: 'Buy Batteries',
+            status: false
+        },
+        {
+            title: 'Buy Bread',
+            status: true
+        },
+    ]
+    
+    MAIN.getTasks = function getTasks(){
+        return tasks
+    }
+    
+    MAIN.addToTasks = function addToTasks(task){
+        tasks.push(task)
+    }
 }
 
-function addToTasks(task){
-    tasks.push(task)
-}
+initWrapper()

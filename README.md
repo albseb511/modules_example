@@ -1,9 +1,15 @@
-### STEP 3
+### STEP 4
 
-in this step:
+let convert this to a module
 
-We can start to use IIFE
+we can use import and export statements now
 
-this essentially means immeadiately invoked function expressions
+lets rename it to module.js and use only init.js
 
-After this you should only have MAIN in your window object
+on the browser you can change type to `module`
+
+```javascript
+<script type="module" src="module.js"></script>
+```
+
+Also make sure you are running a live server to run this

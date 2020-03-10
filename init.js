@@ -1,4 +1,3 @@
-(function initWrapper(){
 var tasks = [
     {
         title: 'Buy Milk',
@@ -14,11 +13,10 @@ var tasks = [
     },
 ]
 
-    MAIN.getTasks = function getTasks(){
-        return tasks
-    }
+export function getTasks(){
+    return tasks
+}
     
-    MAIN.addToTasks = function addToTasks(task){
-        tasks.push(task)
-    }
-})()
+export function addToTasks(task){
+    tasks.push(task)
+}
